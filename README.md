@@ -14,4 +14,18 @@ Instructions on how to clone the repository, set up the environment, and run the
 ```bash
 git clone git@github.com:FFatcoders/atcoder.git
 cd atcoder
+```
+
+## Directory Structure
+
+<pre>
+contests/
+├── abcxxx/
+    ├── a/
+        ├── main.cpp
+        ├── main.py
+        ...
+    ...
+└── README.md
+</pre>
 
