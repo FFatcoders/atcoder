@@ -1,3 +1,3 @@
 s = input()
 
-print(s.split('.')[-1])
+print(s.split('.')[0])
