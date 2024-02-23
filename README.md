@@ -26,6 +26,9 @@ contests/
         ├── {username}.py
         ...
     ...
+library/
+├── python_library/
+    ├── {data_structure_name}.py
 └── README.md
 </pre>
 
