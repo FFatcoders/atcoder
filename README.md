@@ -19,19 +19,20 @@ cd atcoder
 ## Directory Structure
 
 <pre>
-contests/
-├── abcxxx/
-    ├── a/
-        ├── {username}.cpp
-        ├── {username}.py
-            ├── test/
-                ├── sample-{i}.in
-                ├── sample-{i}.out
-                ...
-    ...
-library/
-├── python_library/
-    ├── {data_structure_name}.py
+├── contests/
+    ├── abcxxx/
+        ├── a/
+            ├── {username}.cpp
+            ├── {username}.py
+                ├── test/
+                    ├── sample-{i}.in
+                    ├── sample-{i}.out
+                    ...
+        ...
+├── library/
+    ├── python_library/
+        ├── {data_structure_name}.py
+        ...
 └── README.md
 </pre>
 
