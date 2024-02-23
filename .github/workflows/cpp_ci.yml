@@ -19,7 +19,13 @@ jobs:
     - name: Install dependencies
       run: pip3 install -U git+https://github.com/kmyk/online-judge-verify-helper.git@master
 
+    - name: Get list of changed files
+      id: files
+      run: |
+        git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep .cpp > changed_files.txt
+        echo "::set-output name=list::$(cat changed_files.txt)"
+
     - name: Run Cpp scripts
       run: |
-        find ./contests -type f -name '*.cpp' -exec sh -c 'dir="{}"; echo $dir; base="$(dirname "$dir")"; g++ $dir -w -std=c++20 -I library/ac-library/ && oj t -d  "$base/test/";' \;
+        cat changed_files.txt | xargs -I@  g++ @ -w -std=c++20 -I library/ac-library/ &&  oj t -d $(dirname @)/test/;
 
