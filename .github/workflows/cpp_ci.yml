@@ -24,7 +24,7 @@ jobs:
       id: files
       run: |
         MAIN_LATEST_COMMIT=$(git rev-parse origin/main)
-        git diff --name-only $MAIN_LATEST_COMMIT ${{ github.sha }} | grep '\.cpp$' > changed_files.txt
+        git diff --name-only $MAIN_LATEST_COMMIT ${{ github.sha }} | grep '\.cpp$' > changed_files.txt || true
         echo "::set-output name=list::$(cat changed_files.txt)"
 
 
