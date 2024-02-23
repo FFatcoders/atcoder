@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: pip3 install -U git+https://github.com/kmyk/online-judge-verify-helper.git@master
 
-
     - name: Run Python scripts
       run: |
-        find . -type f -name '*.py' -exec sh -c 'dir="{}"; base="$(dirname "$dir")"; oj t -c "python $dir" -d  "$base/test/"' \;
+        find ./contests -type f -name '*.py' -exec sh -c 'dir="{}"; echo $dir; base="$(dirname "$dir")"; oj t -c "python $dir" -d  "$base/test/";' \;
+
