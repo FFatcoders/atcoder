@@ -13,13 +13,10 @@ jobs:
     - name: Install C++ compiler and tools
       run: sudo apt-get update && sudo apt-get install -y g++ make cmake git
 
-    - name: Clone AtCoder Library
-      run: git clone https://github.com/atcoder/ac-library.git
-
     - name: Install dependencies
       run: pip3 install -U git+https://github.com/kmyk/online-judge-verify-helper.git@master
 
-    - name: Run Python scripts
+    - name: Run Cpp scripts
       run: |
-        find ./contests -type f -name '*.cpp' -exec sh -c 'dir="{}"; echo $dir; base="$(dirname "$dir")"; g++ $(dir).cpp -w -std=c++20 -I ac-library/ && oj t -d  "$base/test/";' \;
+        find ./contests -type f -name '*.cpp' -exec sh -c 'dir="{}"; echo $dir; base="$(dirname "$dir")"; g++ $dir.cpp -w -std=c++20 -I library/ac-library/ && oj t -d  "$base/test/";' \;
 
