@@ -32,6 +32,7 @@ jobs:
       run: |
         if [ -s changed_files.txt ]; then
           while IFS= read -r file; do
+            echo "$file"
             g++ "$file" -o "${file%.*}.out" -w -std=c++20 -I library/ac-library/
             oj t -d "$(dirname "$file")/test/" -c "./${file%.*}.out"
           done < changed_files.txt
