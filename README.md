@@ -22,8 +22,8 @@ cd atcoder
 contests/
 ├── abcxxx/
     ├── a/
-        ├── main.cpp
-        ├── main.py
+        ├── {username}.cpp
+        ├── {username}.py
         ...
     ...
 └── README.md
