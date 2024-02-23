@@ -1,7 +1,7 @@
 # atcoder
 
 ## About
-This project is a collaborative effort between [Yutarotaro](https://github.com/Yutarotaro) and [hayato-coder](https://github.com/hayato-coder) to share and develop solutions for [AtCoder](https://atcoder.jp/?lang=ja) problems. Our goal is to build a comprehensive repository of efficient and well-documented code that can help programmers at all levels improve their competitive programming skills.
+This project is a collaborative effort between [Yutarotaro](https://github.com/Yutarotaro), [hayato-coder](https://github.com/hayato-coder) and [kento980307](https://github.com/kento980037) to share and develop solutions for [AtCoder](https://atcoder.jp/?lang=ja) problems. Our goal is to build a comprehensive repository of efficient and well-documented code that can help programmers at all levels improve their competitive programming skills.
 
 ## Features
 - Solutions to AtCoder problems with detailed explanations.
