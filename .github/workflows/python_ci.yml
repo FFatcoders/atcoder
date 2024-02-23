@@ -1,4 +1,4 @@
-name: verify
+name: ci_python
 
 on: [push]
 
