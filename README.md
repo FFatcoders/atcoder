@@ -24,7 +24,10 @@ contests/
     ├── a/
         ├── {username}.cpp
         ├── {username}.py
-        ...
+            ├── test/
+                ├── sample-{i}.in
+                ├── sample-{i}.out
+                ...
     ...
 └── README.md
 </pre>
