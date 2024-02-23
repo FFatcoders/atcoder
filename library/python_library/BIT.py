@@ -63,4 +63,3 @@ class BIT:
         while i <= self.size:
             self.bit[i] += x # フェニック木のi番目にxを足して更新
             i += -i & i # 最も右にある1の桁に1を足す
-            
