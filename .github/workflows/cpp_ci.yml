@@ -12,6 +12,7 @@ jobs:
       with:
         # サブモジュールを再帰的にチェックアウトする
         submodules: 'recursive'
+        fetch-depth: 0  # リポジトリの全履歴をフェッチする
 
     - name: Install C++ compiler and tools
       run: sudo apt-get update && sudo apt-get install -y g++ make cmake git
