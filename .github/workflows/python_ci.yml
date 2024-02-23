@@ -22,3 +22,4 @@ jobs:
     - name: Run Python scripts
       run: |
         find . -type f -name '*.py' -exec sh -c 'dir="{}"; base="$(dirname "$dir")"; oj t -c python "$dir" -d  "$base/tests/"' \;
+        
