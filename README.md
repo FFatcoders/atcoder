@@ -12,8 +12,12 @@ This project is a collaborative effort between [Yutarotaro](https://github.com/Y
 Instructions on how to clone the repository, set up the environment, and run the solutions.
 
 ```bash
-git clone git@github.com:FFatcoders/atcoder.git
+git clone git@github.com:FFatcoders/atcoder.git --recursive
 cd atcoder
+
+<cpp>
+cd contests/abcxxx/y
+g++ main.cpp -w -std=c++20 -I ../../../library/ac-library
 ```
 
 ## Directory Structure
