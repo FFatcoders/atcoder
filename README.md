@@ -40,3 +40,14 @@ g++ main.cpp -w -std=c++20 -I ../../../library/ac-library
 └── README.md
 </pre>
 
+# Python Usage
+poetry installation
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Install packages specified in pyproject.toml (Python version 3.12 or higher)
+```bash
+poetry install
+```
+
